@@ -6,7 +6,7 @@
 /**
  * main - checks if the number is positive,
  * negative or zero.
- * return(0) - No errors
+ * Return: No errors
  */
 int main(void)
 {
