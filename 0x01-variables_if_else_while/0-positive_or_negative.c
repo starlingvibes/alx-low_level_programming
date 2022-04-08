@@ -3,11 +3,11 @@
 #include<stdio.h>
 
 
-/* function main() - checks if the number is positive,
+/**
+ * main - checks if the number is positive,
  * negative or zero.
  * return(0) - No errors
  */
-
 int main(void)
 {
 	int n;
