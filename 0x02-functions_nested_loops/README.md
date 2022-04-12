@@ -9,3 +9,4 @@ print the last digit of a number
 print every minute of the day of Jack Bauer
 print the 9 times table
 add two integers and return the result
+print from n to 98
