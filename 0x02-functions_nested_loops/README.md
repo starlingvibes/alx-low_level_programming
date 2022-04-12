@@ -14,3 +14,4 @@ print multiplication table of n dimension
 sum of multiples of 3 or 5 below 1024
 printing the first 50 fibonacci numbers
 print sum of fibonacci sequence
+print the first 98 fibonacci numbers
