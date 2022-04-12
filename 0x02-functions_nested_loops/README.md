@@ -12,3 +12,4 @@ add two integers and return the result
 print from n to 98
 print multiplication table of n dimension
 sum of multiples of 3 or 5 below 1024
+printing the first 50 fibonacci numbers
