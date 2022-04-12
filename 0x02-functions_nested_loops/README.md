@@ -10,3 +10,5 @@ print every minute of the day of Jack Bauer
 print the 9 times table
 add two integers and return the result
 print from n to 98
+print multiplication table of n dimension
+sum of multiples of 3 or 5 below 1024
