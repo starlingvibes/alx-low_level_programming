@@ -2,6 +2,7 @@
 
 /**
  * _abs - returns the absolute value of an integer
+ * @n: the number to convert
  * Return: returns 0
  */
 int _abs(int n)
