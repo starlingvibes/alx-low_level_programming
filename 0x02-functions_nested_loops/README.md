@@ -6,3 +6,4 @@ check for alphabets
 check for the sign of a number
 compute the absolute value of an integer
 print the last digit of a number
+print every minute of the day of Jack Bauer
