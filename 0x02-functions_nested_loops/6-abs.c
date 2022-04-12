@@ -4,16 +4,14 @@
  * _abs - returns the absolute value of an integer
  * Return: returns 0
  */
-int _abs(int)
+int _abs(int n)
 {
-	int a;
-
-	if (a < 0)
+	if (n < 0)
 	{
-		return (-a);
+		return (-n);
 	}
 	else
 	{
-		return (a);
+		return (n);
 	}
 }
