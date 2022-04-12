@@ -8,3 +8,4 @@ compute the absolute value of an integer
 print the last digit of a number
 print every minute of the day of Jack Bauer
 print the 9 times table
+add two integers and return the result
