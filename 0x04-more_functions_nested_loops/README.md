@@ -8,3 +8,4 @@ draw a straight line in the terminal
 print a square
 print a triangle
 find the largest prime factor of a long int
+function that prints an integer
