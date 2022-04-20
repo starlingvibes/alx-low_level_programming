@@ -3,3 +3,4 @@ a function that swaps the values of two integers
 a function that returns the length of a string
 prints a string, followed by a new line
 prints a string in reverse
+function that reverses a string
