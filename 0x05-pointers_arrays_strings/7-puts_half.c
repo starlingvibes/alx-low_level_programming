@@ -7,7 +7,7 @@
 
 void puts_half(char *str)
 {
-	int i, n, len;
+	int i, n, leni;
 
 	len = strlen(str);
 	if (len % 2 != 0)
@@ -24,4 +24,4 @@ void puts_half(char *str)
 			putchar(str[i]);
 		}
 	}
-i}
+}
