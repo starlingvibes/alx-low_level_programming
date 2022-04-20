@@ -4,3 +4,4 @@ a function that returns the length of a string
 prints a string, followed by a new line
 prints a string in reverse
 function that reverses a string
+function that prints every other character of a string, starting with the first character
