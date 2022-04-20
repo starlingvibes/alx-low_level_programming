@@ -8,3 +8,4 @@ function that prints every other character of a string, starting with the first 
 function that prints half of a string
 function that prints n elements of an array of integers
 prints n elements of an array of integers
+function that copies the string pointed to by src, including the null byte to the buffer pointed to by dest
