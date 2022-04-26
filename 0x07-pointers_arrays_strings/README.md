@@ -3,3 +3,4 @@ function that copies memory area
 function that locates a character in a string
 function that gets the length of a prefix substring
 function that searches a string for any of a set of bytes
+function that locates a substring
