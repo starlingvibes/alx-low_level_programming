@@ -1,47 +1,61 @@
 #include "main.h"
-
-int check_pal(char *s, int i, int len);
-int _strlen_recursion(char *s);
+#include <stdio.h>
 
 /**
- * is_palindrome - checks if a string is a palindrome
- * @s: string to reverse
+ * _strlen_recursion - measures a string using recursion,
+ * rather than iteration as in _strlen. copied directly from
+ * 0x08-recursion task 2
  *
- * Return: 1 if true, 0 not
+ * @s: pointer to string to be measured
+ *
+ * Return: amount of bytes in string s
  */
-int is_palindrome(char *s)
-{
-	if (*s == 0)
-		return (1);
-	return (check_pal(s, 0, _strlen_recursion(s)));
-}
 
-/**
- * _strlen_recursion - returns the length of a string
- * @s: string to calculate length of
- *
- * Return: length of the string
- */
 int _strlen_recursion(char *s)
 {
-	if (*s == '\0')
+	if (*s == 0)
+	{
 		return (0);
-	return (1 + _strlen_recursion(s + 1));
+	}
+	return ((_strlen_recursion(s + 1)) + 1);
 }
 
 /**
- * check_pal - checks the characters recurseively for palindrome
- * @s: string to check
- * @i: iterator
- * @len: length of the string
+ * pali_comp - recursive helper of is_palindrome, adds second
+ * and third variable to increment from either end of string s
  *
- * Return: 1 if palindrome, 0 if not
+ * @s: string to be checked for symmetry
+ *
+ * @i: index forward from beginning of string
+ *
+ * @j: index backward from end of string
+ *
+ * Return: 1 if string s is palindrome, or 0 if not
  */
-int check_pal(char *s, int i, int len)
+
+int pali_comp(char *s, int i, int j)
 {
-	if (*(s + 1) != *(s + len - 1))
+	if (s[i] != s[j])
 		return (0);
-	if (i >= len)
+	else if (i >= j)
 		return (1);
-	return (check_pal(s, i + 1, len - 1));
+	else
+		return (pali_comp(s, i + 1, j - 1));
+}
+
+/**
+ * is_palindrome - tests if string s is a plaindrome through
+ * a recursive helper
+ *
+ * @s: string to be checked for symmetry
+ *
+ * Return: 1 if s is palindrome, or 0 if not
+ */
+
+int is_palindrome(char *s)
+{
+	if (pali_comp(s, 0, (_strlen_recursion(s) - 1)))
+		return (1);
+	else
+		return (0);
 }
