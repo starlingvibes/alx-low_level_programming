@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		int res;
 
 		*res = *argv[1] * *argv[2];
-		printf("%d\n", res);
+		printf("%d\n", *res);
 	}
 	
 	return (0);
