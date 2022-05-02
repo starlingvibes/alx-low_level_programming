@@ -16,10 +16,13 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		int res;
+		int num1, num2, res;
 
-		*res = *argv[1] * *argv[2];
-		printf("%d\n", *res);
+		num1 = *argv[1];
+		num2 = *argv[2];
+		res = num1 * num2;
+
+		printf("%d\n", res);
 	}
 	
 	return (0);
