@@ -7,7 +7,7 @@
  * Return: 1 on error, 0 on success
  */
 
-int main(int argv, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 	unsigned int k, sum = 0;
