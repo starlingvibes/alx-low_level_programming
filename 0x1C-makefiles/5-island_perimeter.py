@@ -5,6 +5,7 @@ def island_perimeter(grid):
     """ Returns the perimeter of the island in grid """
     visit = set()
     def dfs(i, j):
+        """ Recursive DFS function """
         if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or grid[i][j] == 0:
             return 1
         if (i, j) in visit:
